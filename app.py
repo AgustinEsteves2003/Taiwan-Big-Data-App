@@ -29,7 +29,7 @@ MP4 = st.slider("Importe pagado el mes 3", min_value=0, max_value=420000, value=
 MP5 = st.slider("Importe pagado el mes 2", min_value=0, max_value=420000, value=0)
 MP6 = st.slider("Importe pagado el mes 1", min_value=0, max_value=420000, value=0)
 
-model = joblib.load(r'C:\Users\agust\Downloads\rf_taiwan_grid.joblib')
+model = joblib.load(r'rf_taiwan_grid.joblib')
 
 # Expected features (from your training)
 FEATURES = ["Monto", "Edad", "H1", "H2", "H3", "H4", "H5", "H6", "MC1", "MC2", "MC3", "MC4", "MC5", "MC6", "MP1", "MP2", "MP3", "MP4", "MP5", "MP6", "Genero_1", "Genero_2",	"Educacion_1",	"Educacion_2",	"Educacion_3",	"Educacion_4",	"Estado Civil_1",	"Estado Civil_2",	"Estado Civil_3"]
