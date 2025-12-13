@@ -1,0 +1,15 @@
+name: Mantener Vivo el Portfolio
+
+on:
+  schedule:
+    # Se ejecuta cada 2 horas (puedes ajustarlo)
+    - cron: '0 */2 * * *'
+  workflow_dispatch: # Permite ejecutarlo manualmente si quieres
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping a la URL
+        run: |
+          curl -I https://taiwan-big-data-app-itapp2x9fdrmeen2w3itqft.streamlit.app/
