@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+st.set_page_config(page_title="Default de tarjeta de credito en Taiwan", page_icon="💳")
+
 st.title("Probabilidad de default de tarjeta de credito en Taiwan")
 
 # Input fields
@@ -67,3 +69,4 @@ if st.button("Predict"):
     st.text("Creado por Agustin Esteves, Ignacio Del Bianco y Bruno Petruzzi para la materia Big Data & Machine Learning (Profesor: Santiago Nuñez Rimedio).")
     st.text("Facultad de Ciencias Economicas de la Universidad de Buenos Aires.")
     
+
